@@ -2,14 +2,6 @@
 
 # Servidor de configura&ccedil;&atilde;o autom&aacute;tica como ferramenta para um sistema multiagente.
 
-Ollama: Uma plataforma ou ferramenta focada em melhorar a experi&ecirc;ncia com modelos de linguagem.
-
-![Image_0245](assets/images/itens/IMG_0245.jpg)
-
-![Image_0246](assets/images/itens/IMG_0246.jpg)
-
-_LangChain &eacute; uma biblioteca para criar aplica&ccedil;&otilde;es de linguagem natural, facilitando o desenvolvimento de sistemas que interagem com linguagem natural, neste modelo faremos uso do LangChain-Ollama como complemento ou extens&atilde;o da LangChain projetado para integrar com o Ollama._
-
 # Pr&eacute;-requisitos do sistema
 
 ### Plataformas compat&iacute;veis
@@ -77,5 +69,15 @@ fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
 fastcgi_pass [::1]:19999;
 } }
 ```
+
+### Ollama
+
+Ollama &eacute; uma plataforma focada em melhorar a experi&ecirc;ncia com modelos de linguagem.
+
+![Image_0245](assets/images/itens/IMG_0245.jpg)
+
+![Image_0246](assets/images/itens/IMG_0246.jpg)
+
+_LangChain &eacute; uma biblioteca para criar aplica&ccedil;&otilde;es de linguagem natural, facilitando o desenvolvimento de sistemas que interagem com linguagem natural, neste modelo faremos uso do LangChain-Ollama como complemento ou extens&atilde;o da LangChain projetado para integrar com o Ollama._
 
 _Utiliza comunica&ccedil;&atilde;o bidirecional com o uso de envelopes SOAP (Simple Object Access Protocol) que carregam estrutura XML (Extensive Markup Language). A api realiza a leitura e a configura&ccedil;&atilde;o dos par&acirc;metros das CPEs._
