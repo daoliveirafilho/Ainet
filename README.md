@@ -27,7 +27,7 @@ _Requisitos de hardware_
 * 1-16Gb de mem&oacute;ria RAM
 * 128Gb de storage
 
-### Uso do Ollama como api
+### Ollama como api
 
 ```sh
 # ollama run mistral-small3.1
@@ -44,7 +44,7 @@ _Requisitos de hardware_
 ### Implementa&ccedil;&atilde;o do LangChain
 _LangChain &eacute; uma biblioteca para criar aplica&ccedil;&otilde;es de linguagem natural, facilitando o desenvolvimento de sistemas que interagem com linguagem natural, neste modelo faremos uso do LangChain-Ollama como complemento ou extens&atilde;o da LangChain projetado para integrar com o Ollama._
 
-### O uso do protocolo tr-069 integrado ao PHP
+### O protocolo tr-069 integrado ao PHP
 
 _Utiliza comunica&ccedil;&atilde;o bidirecional com o uso de envelopes SOAP (Simple Object Access Protocol) que carregam estrutura XML (Extensive Markup Language). A api realiza a leitura e a configura&ccedil;&atilde;o dos par&acirc;metros das CPEs._
 
