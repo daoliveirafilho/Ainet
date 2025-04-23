@@ -70,9 +70,9 @@ Ollama &eacute; uma plataforma focada em melhorar a experi&ecirc;ncia com modelo
 
 _Requisitos de hardware_
 
-_* 1-8 n&uacute;cleo(s) de CPU_
-_* 1-16Gb de mem&oacute;ria RAM_
-_* 128Gb de storage_
+* 1-8 n&uacute;cleo(s) de CPU
+* 1-16Gb de mem&oacute;ria RAM
+* 128Gb de storage
 
 ![Image_0245](assets/images/itens/IMG_0245.jpg)
 
