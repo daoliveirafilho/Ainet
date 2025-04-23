@@ -1,6 +1,6 @@
 <!-- ABOUT THE PROJECT -->
 
-# Servidor de configura&ccedil;&atilde;o autom&aacute;tica
+# Servidor de configura&ccedil;&atilde;o autom&aacute;tica conectado ao sistema multiagente.
 
 Ollama: Uma plataforma ou ferramenta focada em melhorar a experi&ecirc;ncia com modelos de linguagem.
 
