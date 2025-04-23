@@ -9,12 +9,6 @@
 * FreeBSD 11.1 ou posterior
 * GNU/Linux portando o kernel 5 ou posterior
 
-### Requisitos de hardware
-
-* 1-8 n&uacute;cleo(s) de CPU
-* 1-16Gb de mem&oacute;ria RAM
-* 128Gb de storage
-
 ### Nginx
 
 O Nginx &eacute; um servidor web que pode funcionar como um proxy reverso, encaminhando solicita&ccedil;&otilde;es de clientes para o PHP-FPM e retornando as respostas processadas de volta para os clientes.
@@ -73,6 +67,12 @@ fastcgi_pass [::1]:19999;
 ### Ollama
 
 Ollama &eacute; uma plataforma focada em melhorar a experi&ecirc;ncia com modelos de linguagem.
+
+_Requisitos de hardware_
+
+_* 1-8 n&uacute;cleo(s) de CPU_
+_* 1-16Gb de mem&oacute;ria RAM_
+_* 128Gb de storage_
 
 ![Image_0245](assets/images/itens/IMG_0245.jpg)
 
