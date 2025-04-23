@@ -66,7 +66,7 @@ fastcgi_pass [::1]:19999;
 
 ### Ollama
 
-Ollama &eacute; uma plataforma focada em melhorar a experi&ecirc;ncia com modelos de linguagem.
+O Ollama &eacute; uma ferramenta de c&oacute;digo aberto que executa large language models (LLMs) diretamente em um computador.
 
 _Requisitos de hardware_
 
