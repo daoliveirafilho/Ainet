@@ -39,31 +39,6 @@ index index.html;
 
 O “PHP FastCGI Process Manager,” &eacute; um gerenciador de processos FastCGI avan&ccedil;ado e de alto desempenho para PHP.
 
-```sh
-[www]
-user = www
-group = www
-listen = [::1]:19999
-listen.owner = www
-listen.group = www
-listen.mode = 0440
-...
-```
-
-![Image_0210](assets/images/itens/IMG_0210.jpg)
-
-```sh
-location ^~ /phpPgAdmin {
-alias /usr/local/www/phpPgAdmin;
-index index.php;
-location ~ \.php$ {
-root /usr/local/www;
-include fastcgi_params;
-fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
-fastcgi_pass [::1]:19999;
-} }
-```
-
 ### Ollama
 
 O Ollama &eacute; uma ferramenta de c&oacute;digo aberto que executa large language models (LLMs) diretamente em um computador.
@@ -92,4 +67,31 @@ _Requisitos de hardware_
 _LangChain &eacute; uma biblioteca para criar aplica&ccedil;&otilde;es de linguagem natural, facilitando o desenvolvimento de sistemas que interagem com linguagem natural, neste modelo faremos uso do LangChain-Ollama como complemento ou extens&atilde;o da LangChain projetado para integrar com o Ollama._
 
 ### O uso do protocolo tr-069 integrado ao PHP
+
 _Utiliza comunica&ccedil;&atilde;o bidirecional com o uso de envelopes SOAP (Simple Object Access Protocol) que carregam estrutura XML (Extensive Markup Language). A api realiza a leitura e a configura&ccedil;&atilde;o dos par&acirc;metros das CPEs._
+
+![Image_0210](assets/images/itens/IMG_0210.jpg)
+
+
+```sh
+[www]
+user = www
+group = www
+listen = [::1]:19999
+listen.owner = www
+listen.group = www
+listen.mode = 0440
+...
+```
+
+```sh
+location ^~ /phpPgAdmin {
+alias /usr/local/www/phpPgAdmin;
+index index.php;
+location ~ \.php$ {
+root /usr/local/www;
+include fastcgi_params;
+fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+fastcgi_pass [::1]:19999;
+} }
+```
