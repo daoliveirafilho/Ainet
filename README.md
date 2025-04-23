@@ -76,14 +76,12 @@ _Requisitos de hardware_
 
 ```sh
 # ollama run mistral-small3.1
-} }
 ```
 
 ![Image_0245](assets/images/itens/IMG_0245.jpg)
 
 ```sh
 # ollama run llama3:8b
-} }
 ```
 
 ![Image_0246](assets/images/itens/IMG_0246.jpg)
