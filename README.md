@@ -2,7 +2,7 @@
 
 # Servidor de configura&ccedil;&atilde;o autom&aacute;tica como ferramenta para um sistema multiagente.
 
-# Pr&eacute;-requisitos do sistema
+## Pr&eacute;-requisitos do sistema
 
 ### Plataformas compat&iacute;veis
 
