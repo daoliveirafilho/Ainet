@@ -13,28 +13,6 @@
 
 O Nginx &eacute; um servidor web que pode funcionar como um proxy reverso, encaminhando solicita&ccedil;&otilde;es de clientes para o PHP-FPM e retornando as respostas processadas de volta para os clientes.
 
-```sh
-server {
-#listen 80;
-listen [::1]:80;
-server_name dominio.exemplo.br computador.dominio.exemplo.br;
-error_page 500 502 503 504 /50x.html;
-location = /50x.html {
-root /usr/local/www;
-}
-error_page 404 402 403 404 /40x.html;
-location = /40x.html {
-root /usr/local/www;
-}
-location / {
-root /usr/local/www;
-index index.html;
-}
-...
-```
-
-![Image_0209](assets/images/itens/IMG_0209.jpg)
-
 ### PHP-FPM
 
 O “PHP FastCGI Process Manager,” &eacute; um gerenciador de processos FastCGI avan&ccedil;ado e de alto desempenho para PHP.
@@ -70,8 +48,27 @@ _LangChain &eacute; uma biblioteca para criar aplica&ccedil;&otilde;es de lingua
 
 _Utiliza comunica&ccedil;&atilde;o bidirecional com o uso de envelopes SOAP (Simple Object Access Protocol) que carregam estrutura XML (Extensive Markup Language). A api realiza a leitura e a configura&ccedil;&atilde;o dos par&acirc;metros das CPEs._
 
-![Image_0210](assets/images/itens/IMG_0210.jpg)
+```sh
+server {
+#listen 80;
+listen [::1]:80;
+server_name dominio.exemplo.br computador.dominio.exemplo.br;
+error_page 500 502 503 504 /50x.html;
+location = /50x.html {
+root /usr/local/www;
+}
+error_page 404 402 403 404 /40x.html;
+location = /40x.html {
+root /usr/local/www;
+}
+location / {
+root /usr/local/www;
+index index.html;
+}
+...
+```
 
+![Image_0209](assets/images/itens/IMG_0209.jpg)
 
 ```sh
 [www]
@@ -83,6 +80,8 @@ listen.group = www
 listen.mode = 0440
 ...
 ```
+
+![Image_0210](assets/images/itens/IMG_0210.jpg)
 
 ```sh
 location ^~ /phpPgAdmin {
