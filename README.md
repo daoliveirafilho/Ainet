@@ -6,7 +6,7 @@ Ollama: Uma plataforma ou ferramenta focada em melhorar a experi&ecirc;ncia com 
 
 ![Image_0245](assets/images/itens/IMG_0245.jpg)
 
-_LangChain &eacute; uma biblioteca para criar aplica&ccedil;&otilde;es de linguagem natural, facilitando o desenvolvimento de sistemas que interagem com linguagem natural, LangChain-Ollama como complemento ou extens&atilde;o da LangChain projetado para integrar com o Ollama._
+_LangChain &eacute; uma biblioteca para criar aplica&ccedil;&otilde;es de linguagem natural, facilitando o desenvolvimento de sistemas que interagem com linguagem natural, neste modelo faremos uso do LangChain-Ollama como complemento ou extens&atilde;o da LangChain projetado para integrar com o Ollama._
 
 # Pr&eacute;-requisitos do sistema
 
