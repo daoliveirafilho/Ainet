@@ -77,15 +77,15 @@ _A api realiza a leitura e a configura&ccedil;&atilde;o dos par&acirc;metros das
  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
  xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
  SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
-	<SOAP-ENV:Header>
-		<cwmp:ID SOAP-ENV:mustUnderstand="1">%%ID%%</cwmp:ID>
-		<cwmp:HoldRequests soap:mustUnderstand="1">0</cwmp:HoldRequests>
-	</SOAP-ENV:Header>
-	<SOAP-ENV:Body>
-		<cwmp:%%Method%%>
-			%%Arguments%%
-		</cwmp:%%Method%%>
-	</SOAP-ENV:Body>
+<SOAP-ENV:Header>
+<cwmp:ID SOAP-ENV:mustUnderstand="1">%%ID%%</cwmp:ID>
+<cwmp:HoldRequests soap:mustUnderstand="1">0</cwmp:HoldRequests>
+</SOAP-ENV:Header>
+<SOAP-ENV:Body>
+<cwmp:%%Method%%>
+%%Arguments%%
+</cwmp:%%Method%%>
+</SOAP-ENV:Body>
 </SOAP-ENV:Envelope>
 ```
 
