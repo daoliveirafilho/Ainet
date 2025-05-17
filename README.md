@@ -1,6 +1,6 @@
 <!-- ABOUT THE PROJECT -->
 
-# Servidor de configura&ccedil;&atilde;o autom&aacute;tica como ferramenta para um sistema multiagente.
+# Servidor de configura&ccedil;&atilde;o autom&aacute;tica (ACS) como ferramenta para um sistema multiagentes (MAS).
 
 ## Pr&eacute;-requisitos do sistema
 
