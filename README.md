@@ -26,8 +26,6 @@ listen.mode = 0440
 ...
 ```
 
-![Image_0210](assets/images/itens/IMG_0210.jpg)
-
 ```sh
 location ^~ /phpPgAdmin {
 alias /usr/local/www/phpPgAdmin;
@@ -39,6 +37,8 @@ fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
 fastcgi_pass [::1]:19999;
 } }
 ```
+
+![Image_0210](assets/images/itens/IMG_0210.jpg)
 
 ### PHP-FPM
 
