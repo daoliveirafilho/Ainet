@@ -47,6 +47,10 @@ fastcgi_pass [::1]:19999;
 } }
 ```
 
+### PHP-FPM
+
+O “PHP FastCGI Process Manager,” &eacute; um gerenciador de processos FastCGI avan&ccedil;ado e de alto desempenho para PHP.
+
 ```sh
 [www]
 user = www
@@ -59,10 +63,6 @@ listen.mode = 0440
 ```
 
 ![Image_0210](assets/images/itens/IMG_0210.jpg)
-
-### PHP-FPM
-
-O “PHP FastCGI Process Manager,” &eacute; um gerenciador de processos FastCGI avan&ccedil;ado e de alto desempenho para PHP.
 
 ### O protocolo tr-069 integrado ao PHP
 
