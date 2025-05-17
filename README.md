@@ -13,6 +13,33 @@
 
 O Nginx &eacute; um servidor web que pode funcionar como um proxy reverso, encaminhando solicita&ccedil;&otilde;es de clientes para o PHP-FPM e retornando as respostas processadas de volta para os clientes.
 
+![Image_0209](assets/images/itens/IMG_0209.jpg)
+
+```sh
+[www]
+user = www
+group = www
+listen = [::1]:19999
+listen.owner = www
+listen.group = www
+listen.mode = 0440
+...
+```
+
+![Image_0210](assets/images/itens/IMG_0210.jpg)
+
+```sh
+location ^~ /phpPgAdmin {
+alias /usr/local/www/phpPgAdmin;
+index index.php;
+location ~ \.php$ {
+root /usr/local/www;
+include fastcgi_params;
+fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+fastcgi_pass [::1]:19999;
+} }
+```
+
 ### PHP-FPM
 
 O “PHP FastCGI Process Manager,” &eacute; um gerenciador de processos FastCGI avan&ccedil;ado e de alto desempenho para PHP.
@@ -39,33 +66,6 @@ root /usr/local/www;
 index index.html;
 }
 ...
-```
-
-![Image_0209](assets/images/itens/IMG_0209.jpg)
-
-```sh
-[www]
-user = www
-group = www
-listen = [::1]:19999
-listen.owner = www
-listen.group = www
-listen.mode = 0440
-...
-```
-
-![Image_0210](assets/images/itens/IMG_0210.jpg)
-
-```sh
-location ^~ /phpPgAdmin {
-alias /usr/local/www/phpPgAdmin;
-index index.php;
-location ~ \.php$ {
-root /usr/local/www;
-include fastcgi_params;
-fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
-fastcgi_pass [::1]:19999;
-} }
 ```
 
 ### Ollama
