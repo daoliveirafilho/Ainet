@@ -16,39 +16,6 @@ O Nginx &eacute; um servidor web que pode funcionar como um proxy reverso, encam
 ![Image_0209](assets/images/itens/IMG_0209.jpg)
 
 ```sh
-[www]
-user = www
-group = www
-listen = [::1]:19999
-listen.owner = www
-listen.group = www
-listen.mode = 0440
-...
-```
-
-```sh
-location ^~ /phpPgAdmin {
-alias /usr/local/www/phpPgAdmin;
-index index.php;
-location ~ \.php$ {
-root /usr/local/www;
-include fastcgi_params;
-fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
-fastcgi_pass [::1]:19999;
-} }
-```
-
-![Image_0210](assets/images/itens/IMG_0210.jpg)
-
-### PHP-FPM
-
-O “PHP FastCGI Process Manager,” &eacute; um gerenciador de processos FastCGI avan&ccedil;ado e de alto desempenho para PHP.
-
-### O protocolo tr-069 integrado ao PHP
-
-_A api realiza a leitura e a configura&ccedil;&atilde;o dos par&acirc;metros das CPEs com o uso de envelopes SOAP (Simple Object Access Protocol) e uma estrutura XML (Extensive Markup Language)._
-
-```sh
 server {
 #listen 80;
 listen [::1]:80;
@@ -67,6 +34,39 @@ index index.html;
 }
 ...
 ```
+
+```sh
+location ^~ /phpPgAdmin {
+alias /usr/local/www/phpPgAdmin;
+index index.php;
+location ~ \.php$ {
+root /usr/local/www;
+include fastcgi_params;
+fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+fastcgi_pass [::1]:19999;
+} }
+```
+
+```sh
+[www]
+user = www
+group = www
+listen = [::1]:19999
+listen.owner = www
+listen.group = www
+listen.mode = 0440
+...
+```
+
+![Image_0210](assets/images/itens/IMG_0210.jpg)
+
+### PHP-FPM
+
+O “PHP FastCGI Process Manager,” &eacute; um gerenciador de processos FastCGI avan&ccedil;ado e de alto desempenho para PHP.
+
+### O protocolo tr-069 integrado ao PHP
+
+_A api realiza a leitura e a configura&ccedil;&atilde;o dos par&acirc;metros das CPEs com o uso de envelopes SOAP (Simple Object Access Protocol) e uma estrutura XML (Extensive Markup Language)._
 
 # ...em desenvolvimento
 
