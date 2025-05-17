@@ -70,13 +70,7 @@ _A api realiza a leitura e a configura&ccedil;&atilde;o dos par&acirc;metros das
 
 ```sh
 <?xml version="1.0" encoding="UTF-8"?>
-<SOAP-ENV:Envelope
- xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
- xmlns:cwmp="urn:dslforum-org:cwmp-1-0"
- xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xmlns:xsd="http://www.w3.org/2001/XMLSchema"
- xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
- SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cwmp="urn:dslforum-org:cwmp-1-0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
 <SOAP-ENV:Header>
 <cwmp:ID SOAP-ENV:mustUnderstand="1">%%ID%%</cwmp:ID>
 <cwmp:HoldRequests soap:mustUnderstand="1">0</cwmp:HoldRequests>
