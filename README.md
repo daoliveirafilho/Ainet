@@ -17,33 +17,6 @@ O Nginx &eacute; um servidor web que pode funcionar como um proxy reverso, encam
 
 O “PHP FastCGI Process Manager,” &eacute; um gerenciador de processos FastCGI avan&ccedil;ado e de alto desempenho para PHP.
 
-### Ollama
-
-O Ollama &eacute; uma ferramenta de c&oacute;digo aberto que executa large language models (LLMs) diretamente em um computador.
-
-_Requisitos de hardware_
-
-* 1-8 n&uacute;cleo(s) de CPU
-* 1-16Gb de mem&oacute;ria RAM
-* 128Gb de storage
-
-### Ollama como api
-
-```sh
-# ollama run mistral-small3.1
-```
-
-![Image_0245](assets/images/itens/IMG_0245.jpg)
-
-```sh
-# ollama run llama3:8b
-```
-
-![Image_0246](assets/images/itens/IMG_0246.jpg)
-
-### Implementa&ccedil;&atilde;o do LangChain
-_LangChain &eacute; uma biblioteca para criar aplica&ccedil;&otilde;es de linguagem natural, facilitando o desenvolvimento de sistemas que interagem com linguagem natural, neste modelo faremos uso do LangChain-Ollama como complemento ou extens&atilde;o da LangChain projetado para integrar com o Ollama._
-
 ### O protocolo tr-069 integrado ao PHP
 
 _Utiliza comunica&ccedil;&atilde;o bidirecional com o uso de envelopes SOAP (Simple Object Access Protocol) que carregam estrutura XML (Extensive Markup Language). A api realiza a leitura e a configura&ccedil;&atilde;o dos par&acirc;metros das CPEs._
@@ -94,4 +67,32 @@ fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
 fastcgi_pass [::1]:19999;
 } }
 ```
+
+### Ollama
+
+O Ollama &eacute; uma ferramenta de c&oacute;digo aberto que executa large language models (LLMs) diretamente em um computador.
+
+_Requisitos de hardware_
+
+* 1-8 n&uacute;cleo(s) de CPU
+* 1-16Gb de mem&oacute;ria RAM
+* 128Gb de storage
+
+### Ollama como api
+
+```sh
+# ollama run mistral-small3.1
+```
+
+![Image_0245](assets/images/itens/IMG_0245.jpg)
+
+```sh
+# ollama run llama3:8b
+```
+
+![Image_0246](assets/images/itens/IMG_0246.jpg)
+
+### Implementa&ccedil;&atilde;o do LangChain
+_LangChain &eacute; uma biblioteca para criar aplica&ccedil;&otilde;es de linguagem natural, facilitando o desenvolvimento de sistemas que interagem com linguagem natural, neste modelo faremos uso do LangChain-Ollama como complemento ou extens&atilde;o da LangChain projetado para integrar com o Ollama._
+
 # ...em desenvolvimento
