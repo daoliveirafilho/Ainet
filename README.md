@@ -19,7 +19,7 @@ O “PHP FastCGI Process Manager,” &eacute; um gerenciador de processos FastCG
 
 ### O protocolo tr-069 integrado ao PHP
 
-_Utiliza comunica&ccedil;&atilde;o bidirecional com o uso de envelopes SOAP (Simple Object Access Protocol) que carregam estrutura XML (Extensive Markup Language). A api realiza a leitura e a configura&ccedil;&atilde;o dos par&acirc;metros das CPEs._
+_A api realiza a leitura e a configura&ccedil;&atilde;o dos par&acirc;metros das CPEs com o uso de envelopes SOAP (Simple Object Access Protocol) e uma estrutura XML (Extensive Markup Language)._
 
 ```sh
 server {
