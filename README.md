@@ -68,6 +68,8 @@ index index.html;
 ...
 ```
 
+# ...em desenvolvimento
+
 ### Ollama
 
 O Ollama &eacute; uma ferramenta de c&oacute;digo aberto que executa large language models (LLMs) diretamente em um computador.
