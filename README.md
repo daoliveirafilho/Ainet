@@ -72,12 +72,12 @@ _A api realiza a leitura e a configura&ccedil;&atilde;o dos par&acirc;metros das
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
                xmlns:cwmp="urn:dslforum-org:cwmp-1-0"
                soap:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
-  <soap:Header>
-    <cwmp:ID mustUnderstand="1">$ID</cwmp:ID>    
-  </soap:Header>
-  <soap:Body>
-       <cwmp:GetRPCMethods></cwmp:GetRPCMethods>
-  </soap:Body>
+<soap:Header>
+<cwmp:ID mustUnderstand="1">$ID</cwmp:ID>    
+</soap:Header>
+<soap:Body>
+<cwmp:GetRPCMethods></cwmp:GetRPCMethods>
+</soap:Body>
 </soap:Envelope>
 ```
 
