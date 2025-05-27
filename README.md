@@ -69,39 +69,16 @@ listen.mode = 0440
 _A api realiza a leitura e a configura&ccedil;&atilde;o dos par&acirc;metros das CPEs com o uso de envelopes SOAP (Simple Object Access Protocol) e uma estrutura XML (Extensive Markup Language)._
 
 ```sh
-<?xml version="1.0" encoding="utf-8"?>
-<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
-                   xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
-                   xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
-                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-                   xmlns:cwmp="urn:dslforum-org:cwmp-1-0">
-    <SOAP-ENV:Header>
-        <cwmp:ID SOAP-ENV:mustUnderstand="1">12</cwmp:ID>
-    </SOAP-ENV:Header>
-    <SOAP-ENV:Body>
-        <cwmp:Reboot>
-            <CommandKey>RebootCommand</CommandKey>
-        </cwmp:Reboot>
-    </SOAP-ENV:Body>
-</SOAP-ENV:Envelope>
-```
-
-```sh
-<?xml version="1.0" encoding="UTF-8"?>
-<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
-                   xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
-                   xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                   xmlns:cwmp="urn:dslforum-org:cwmp-1-0">
-  <SOAP-ENV:Header>
-    <cwmp:ID SOAP-ENV:mustUnderstand="1">12</cwmp:ID>
-  </SOAP-ENV:Header>
-  <SOAP-ENV:Body>
-    <cwmp:RebootResponse>
-      <CommandKey>RebootCommand</CommandKey>
-    </cwmp:RebootResponse>
-  </SOAP-ENV:Body>
-</SOAP-ENV:Envelope>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+               xmlns:cwmp="urn:dslforum-org:cwmp-1-0"
+               soap:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+  <soap:Header>
+    <cwmp:ID mustUnderstand="1">$ID</cwmp:ID>    
+  </soap:Header>
+  <soap:Body>
+       <cwmp:GetRPCMethods></cwmp:GetRPCMethods>
+  </soap:Body>
+</soap:Envelope>
 ```
 
 # ...em desenvolvimento
