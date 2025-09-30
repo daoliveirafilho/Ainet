@@ -113,6 +113,5 @@ _Requisitos de hardware_
 _LangChain &eacute; uma biblioteca para criar aplica&ccedil;&otilde;es de linguagem natural, facilitando o desenvolvimento de sistemas que interagem com linguagem natural, neste modelo faremos uso do LangChain-Ollama como complemento ou extens&atilde;o da LangChain projetado para integrar com o Ollama._
 
 # ...em desenvolvimento
-# Site
 
 _Vulnerabilidades de seguran&ccedil;a s&atilde;o inevit&aacute;veis, mas &eacute; poss&iacute;vel lidar com elas de forma respons&aacute;vel, dessa forma a escolha do sistema operacional pode impactar na experi&ecirc;ncia do usu&aacute;rio, na seguran&ccedil;a e na efici&ecirc;ncia das opera&ccedil;&otilde;es._
