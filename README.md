@@ -95,7 +95,7 @@ _Requisitos de hardware_
 * 1-16Gb de mem&oacute;ria RAM
 * 128Gb de storage
 
-### Ollama como api
+### Ollama via api
 
 ```sh
 # ollama run mistral-small3.1
