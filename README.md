@@ -64,8 +64,6 @@ listen.mode = 0440
 
 ![Image_0210](assets/images/itens/IMG_0210.jpg)
 
-### O protocolo tr-069 integrado ao PHP
-
 _A api realiza a leitura e a configura&ccedil;&atilde;o dos par&acirc;metros das CPEs com o uso de envelopes SOAP (Simple Object Access Protocol) e uma estrutura XML (Extensive Markup Language)._
 
 ```sh
