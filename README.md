@@ -108,5 +108,3 @@ _Requisitos de hardware_
 ![Image_0246](assets/images/itens/IMG_0246.jpg)
 
 # ...em desenvolvimento
-
-_Vulnerabilidades de seguran&ccedil;a s&atilde;o inevit&aacute;veis, mas &eacute; poss&iacute;vel lidar com elas de forma respons&aacute;vel, dessa forma a escolha do sistema operacional pode impactar na experi&ecirc;ncia do usu&aacute;rio, na seguran&ccedil;a e na efici&ecirc;ncia das opera&ccedil;&otilde;es._
